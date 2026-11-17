@@ -1,0 +1,37 @@
+﻿file,classification,note
+register.csv,عام,هذا السجل: تصنيف كل ملف من ملفات المختبرات
+triage/requests/R01.txt إلى R10.txt,مقيد,طلبات مشاركة واردة فيها أسماء موظفي الجهات الطالبة وبيانات اتصالهم
+triage/data_inventory.csv,مقيد,قائمة مجموعات بيانات الهيئة بتصنيفها ومصدرها
+triage/sharing_procedure.md,عام,إجراء الهيئة لطلبات المشاركة، منشور على موقعها
+triage/codes.md,عام,رموز سجل القرارات
+triage/agreement_template.md,عام,قالب اتفاقية مشاركة البيانات
+research/research_request.txt,مقيد,طلب بحثي فيه بيانات شخصية لمقدمته
+research/funding_note.txt,مقيد,مراسلة عن تمويل البحث
+research/fields_requested.csv,عام,أسماء الحقول المطلوبة ووصفها، دون أي قيمة
+research/memo_template.md,عام,قالب مذكرة القرار
+research/access_routes.md,عام,مسارات الوصول في الهيئة، منشورة على موقعها
+open/injuries_2025.csv,مقيد,بلاغات إصابات العمل لعام 2025، سجل لكل إصابة
+open/dictionary.csv,عام,قاموس الأعمدة
+open/hierarchies.csv,عام,تدرج المدن إلى المناطق والمهن إلى مجموعاتها
+open/treatment_start.json,عام,إعداد المعالجة كما وصل
+open/dataset_start.json,عام,سجل البيانات الوصفية كما وصل
+open/portal_profile.json,عام,الحقول التي تشترطها بوابة النشر في الحالة
+open/publication_request.txt,مقيد,مذكرة داخلية تطلب النشر
+foi/requests/F1.txt إلى F5.txt,مقيد,طلبات معلومات فيها أسماء مقدميها وعناوينهم
+foi/records/F2_visit_2024.txt,مقيد,تقرير زيارة تفتيش مغلقة
+foi/records/F2_visit_2026.txt,مقيد,تقرير زيارة تفتيش وقضية مخالفة مفتوحة
+foi/records/F3_contract.txt,مقيد,عقد نظام البلاغات وملاحقه
+foi/records/F4_memo.txt,مقيد,مذكرة توصيات لقرار لم يصدر بعد
+foi/exemptions.md,عام,فئات المعلومات المحمية كما يقرؤها إجراء الهيئة
+foi/letter_template.md,عام,قالب الخطاب
+foi/deadline_rule.md,عام,قاعدة المهل في إجراء الهيئة
+foi/summaries_for_assistant.md,عام,ملخصات الطلبات الخمسة دون أي بيانات شخصية، أعدها مكتب الإتاحة
+followup/requests_2026H1.csv,مقيد,سجل الطلبات الداخلي
+followup/downloads_2026H1.csv,عام,إحصاءات التنزيل المنشورة
+followup/reuse_2026H1.csv,عام,حالات إعادة الاستخدام المعلنة
+followup/plan_2026H1.csv,عام,خطة النشر المعتمدة والمنشورة
+followup/feedback_2026H1.csv,مقيد,ملاحظات المستخدمين، وقد تحمل بيانات شخصية
+followup/brief.md,عام,موجز مهمة المتابعة
+followup/report_template.md,عام,قالب التقرير
+out/indicators.md,عام,ناتج أداة المؤشرات: أعداد ونسب مجمّعة بلا سجل فردي
+examples/*,عام,أمثلة الشرائح، اصطناعية

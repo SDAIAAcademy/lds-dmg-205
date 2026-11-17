@@ -1,0 +1,22 @@
+{
+  "_note": "مثال الشرائح: شكاوى الإجهاد الحراري",
+  "input": "files/examples/heat_complaints_2025.csv",
+  "drop": [
+    "complaint_id",
+    "city"
+  ],
+  "generalise": {
+    "age": "bands:18,30,45,65"
+  },
+  "quasi_identifiers": [
+    "region",
+    "sector",
+    "age",
+    "gender",
+    "nationality",
+    "month"
+  ],
+  "sensitive": "outcome",
+  "k": 5,
+  "suppress_below_k": true
+}
