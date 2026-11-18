@@ -1,0 +1,21 @@
+{
+  "_note": "إعداد المعالجة كما أرسله فريق التقارير: حذف هوية العامل فقط",
+  "input": "files/open/injuries_2025.csv",
+  "drop": [
+    "worker_id"
+  ],
+  "generalise": {},
+  "quasi_identifiers": [
+    "city",
+    "sector",
+    "establishment_size",
+    "occupation",
+    "age",
+    "gender",
+    "nationality",
+    "injury_date"
+  ],
+  "sensitive": "injury_type",
+  "k": 5,
+  "suppress_below_k": false
+}

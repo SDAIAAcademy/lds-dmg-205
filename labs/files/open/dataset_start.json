@@ -1,0 +1,31 @@
+{
+  "name": "Injuries 2025",
+  "title": "إصابات العمل 2025",
+  "notes": "بيانات الإصابات.",
+  "license_id": "cc-by-nc-4.0",
+  "owner_org": "siyan-osh",
+  "maintainer": "مكتب البيانات المفتوحة",
+  "maintainer_email": "",
+  "tags": [
+    {
+      "name": "إصابات"
+    }
+  ],
+  "resources": [
+    {
+      "name": "injuries",
+      "url": "injuries_2025_open.xlsx",
+      "format": "XLSX"
+    }
+  ],
+  "extras": [
+    {
+      "key": "frequency",
+      "value": "سنوي"
+    },
+    {
+      "key": "classification",
+      "value": "مقيد"
+    }
+  ]
+}

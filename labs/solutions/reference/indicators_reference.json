@@ -1,0 +1,14 @@
+{
+  "_note": "الإعداد المرجعي: يحذف المكرر والمسحوب وأخطاء الإدخال، ويعد الطلب المفتوح بعد مهلته متأخرًا، ويحسب مهلة المشاركة بأيام العمل",
+  "requests": "files/followup/requests_2026H1.csv",
+  "downloads": "files/followup/downloads_2026H1.csv",
+  "reuse": "files/followup/reuse_2026H1.csv",
+  "plan": "files/followup/plan_2026H1.csv",
+  "feedback": "files/followup/feedback_2026H1.csv",
+  "period_end": "2026-06-30",
+  "exclude_duplicates": true,
+  "exclude_withdrawn": true,
+  "exclude_entry_errors": true,
+  "open_requests": "late_if_past_deadline",
+  "sharing_days": "business"
+}

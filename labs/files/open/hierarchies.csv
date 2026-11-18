@@ -1,0 +1,48 @@
+﻿attribute,value,parent
+city,الرتم,الوادي
+city,العرفج,الوادي
+city,الثمام,الوادي
+city,السمر,الساحل
+city,الغاف,الساحل
+city,العوسج,الساحل
+city,الشيح,النجد
+city,القيصوم,النجد
+city,الرمث,النجد
+city,النفل,الجبل
+city,الخزامى,الجبل
+city,الضال,الجبل
+city,العشرق,الواحة
+city,الحرمل,الواحة
+city,السعدان,الواحة
+occupation,عامل بناء,عمال البناء
+occupation,حداد مسلح,عمال البناء
+occupation,نجار قوالب,عمال البناء
+occupation,عامل سقالات,عمال البناء
+occupation,لحّام,عمال البناء
+occupation,مشغل رافعة,مشغلو الآلات
+occupation,سائق معدة ثقيلة,مشغلو الآلات
+occupation,مشغل آلة تصنيع,مشغلو الآلات
+occupation,فني خط إنتاج,مشغلو الآلات
+occupation,سائق شاحنة,النقل والتخزين
+occupation,عامل تحميل,النقل والتخزين
+occupation,أمين مستودع,النقل والتخزين
+occupation,سائق توصيل,النقل والتخزين
+occupation,كهربائي,الفنيون
+occupation,فني تكييف,الفنيون
+occupation,فني صيانة,الفنيون
+occupation,سباك,الفنيون
+occupation,غواص تجاري,الفنيون
+occupation,ممرض,الرعاية الصحية
+occupation,فني مختبر,الرعاية الصحية
+occupation,مساعد طبي,الرعاية الصحية
+occupation,عامل نظافة طبية,الرعاية الصحية
+occupation,عامل مزرعة,الزراعة
+occupation,مشغل ري,الزراعة
+occupation,عامل بيوت محمية,الزراعة
+occupation,بائع,الخدمات والبيع
+occupation,أمين صندوق,الخدمات والبيع
+occupation,طاهٍ,الخدمات والبيع
+occupation,عامل نظافة,الخدمات والبيع
+occupation,موظف إداري,الإداريون
+occupation,مشرف,الإداريون
+occupation,محاسب,الإداريون

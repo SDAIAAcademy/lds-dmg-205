@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · اختبار خطر مجموعة بيانات قبل نشرها · مشاركة البيانات والبيانات المفتوحة وحرية المعلومات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_open.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>اختبار خطر مجموعة بيانات قبل نشرها</h1>
+<p>تقيس خطر إعادة تحديد الهوية في 6000 بلاغ إصابة قبل نشرها مفتوحة، وتعالج بالحذف والتعميم حتى تتحقق معايير الهيئة، وتصلح سجل البيانات الوصفية وترخيصه حتى يجتاز التحقق.</p>
+<div class="meta"><span>105 دقائق</span><span>اليوم 2</span><span>الجلسة 1: مفتوحة بالأصل وبخطر مقيس</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>إعداد معالجة لبلاغات الإصابات 2025 يحقق معايير الهيئة الأربعة، وسجل بكل محاولة جربتها وما أعطته.</li>
+    <li>الخطر قبل المعالجة وبعدها، وجملة عن الخطر المتبقي يفهمها مستخدم المنصة.</li>
+    <li>سجل بيانات وصفية بترخيص مفتوح يجتاز أداة التحقق.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/open/publication_request.txt"><b>open/publication_request.txt</b><span>مذكرة النشر ومعايير الهيئة. «مقيد».</span></a>
+  <a href="files/open/injuries_2025.csv"><b>open/injuries_2025.csv</b><span>6000 بلاغ إصابة، سجل لكل إصابة. «مقيد».</span></a>
+  <a href="files/open/dictionary.csv" class="ai-ok"><b>open/dictionary.csv</b><span>قاموس الأعمدة الأربعة عشر. «عام».</span></a>
+  <a href="files/open/hierarchies.csv" class="ai-ok"><b>open/hierarchies.csv</b><span>المدن إلى مناطقها، والمهن إلى مجموعاتها. «عام».</span></a>
+  <a href="files/open/treatment_start.json" class="ai-ok"><b>open/treatment_start.json</b><span>إعداد المعالجة كما أرسله فريق التقارير. «عام».</span></a>
+  <a href="files/open/dataset_start.json" class="ai-ok"><b>open/dataset_start.json</b><span>سجل البيانات الوصفية كما وصل. «عام».</span></a>
+  <a href="files/open/portal_profile.json" class="ai-ok"><b>open/portal_profile.json</b><span>ما تشترطه بوابة النشر في الحالة. «عام».</span></a>
+</div>
+<p class="small">جدول بيانات ومحرر نصوص. الأوامر تُشغّل من مجلد <code>labs</code>، وتكتب في <code>out/</code>.</p>
+
+<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر: مرشد.</b> يشرح مقياسًا أو يقترح تعميمًا تجربه أنت. يرى القاموس والتدرجات وملفي الإعداد والسجل والملف التعريفي للبوابة، ومقاييس <code>out/risk_report.json</code> المجمّعة، وكلها «عام» في السجل. ملف البلاغات «مقيد» قبل المعالجة، فلا يدخله لا هو ولا جزء منه، ولا ناتج <code>out/release.csv</code> قبل أن يجتاز المعايير ويُعتمد.</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · المذكرة والإعداد كما وصل <span class="min">10 د</span></h3>
+  <p>اقرأ مذكرة النشر واكتب المعايير الأربعة على ورقة. ثم شغّل الأداة على الإعداد كما وصل، واقرأ عمود «قبل».</p>
+  <pre class="code"><code>mkdir out
+uv run kit/risk.py files/open/treatment_start.json</code></pre>
+</div>
+
+<div class="step">
+  <h3>2 · تصنيف الأعمدة <span class="min">15 د</span></h3>
+  <p>لكل عمود من القاموس: معرِّف مباشر، أو معرّف إداري يربط بسجلات أخرى، أو شبه مباشر يكشف الهوية مع غيره، أو نتيجة. الأداة تطبع عدد القيم المختلفة في كل عمود: العمود الفريد تقريبًا لكل سجل لا يبقى. ثم انسخ الإعداد لتعدّله.</p>
+  <pre class="code"><code>cp files/open/treatment_start.json out/treatment.json</code></pre>
+</div>
+
+<div class="step">
+  <h3>3 · الحذف والتعميم <span class="min">35 د</span></h3>
+  <p>عدّل <code>drop</code> و<code>generalise</code> و<code>quasi_identifiers</code> في <code>out/treatment.json</code>، وفعّل <code>suppress_below_k</code>، ثم شغّل الأداة. بعد كل تشغيل اكتب سطرًا في <code>out/attempts.md</code>: ما غيّرت، وk، ومتوسط الخطر، ونسبة المحذوف. التعميمات المتاحة في رأس <code>kit/risk.py</code>.</p>
+  <pre class="code"><code>uv run kit/risk.py out/treatment.json</code></pre>
+  <div class="prompt" data-tool="مساعد محادثة، مرشدًا">أعالج مجموعة بيانات قبل نشرها. هذه أعمدتها ومعانيها: <span class="ph">ألصق dictionary.csv</span>. وهذه نتيجة آخر محاولة: k وأعلى خطر ومتوسط الخطر ونسبة المحذوف <span class="ph">الأرقام الأربعة من out/risk_report.json</span>. لا تكتب لي الإعداد. اسألني أي عمود يخدم مستخدمي البيانات أقل، وما يخسره كل تعميم.</div>
+</div>
+
+<div class="step">
+  <h3>4 · الخطر قبل وبعد، والخطر المتبقي <span class="min">10 د</span></h3>
+  <p>من <code>out/risk_report.json</code> اكتب في <code>out/attempts.md</code> جدولًا بالمقاييس قبل المعالجة وبعدها. ثم جملتين عن الخطر المتبقي: ما الذي ما زال ممكنًا (المجموعات المتجانسة، والربط ببيانات منشورة أخرى)، ولماذا قبلته الهيئة.</p>
+</div>
+
+<div class="step">
+  <h3>5 · سجل البيانات الوصفية والترخيص <span class="min">25 د</span></h3>
+  <p>انسخ السجل وأصلحه حتى يطابق الملف التعريفي للبوابة: الاسم، والوصف، والترخيص، والصيغة، والتصنيف بعد المعالجة، وk والمحذوف كما في تقرير الخطر، والخطر المتبقي من الخطوة 4.</p>
+  <pre class="code"><code>cp files/open/dataset_start.json out/dataset.json
+uv run kit/metadata_check.py files/open/dataset_start.json</code></pre>
+</div>
+
+<div class="step">
+  <h3>6 · التحقق حتى النجاح <span class="min">10 د</span></h3>
+  <p>شغّل الأداتين بالترتيب. إن غيّرت المعالجة بعد كتابة السجل، أعد كتابة k والمحذوف فيه.</p>
+  <pre class="code"><code>uv run kit/risk.py out/treatment.json
+uv run kit/metadata_check.py out/dataset.json</code></pre>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>جرّب معالجة تحتفظ بالمهنة (أو مجموعتها) بدل القطاع، وقارن ما تخسره كل منهما: أي سؤال لمستخدم البيانات تجيب عنه الأولى ولا تجيب عنه الثانية؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم سجلًا فريدًا كان في الملف كما وصل، وكم بعد معالجتك؟</li>
+  <li>أي عمود حذفته وكان أصعب قرار، وماذا خسر مستخدم البيانات به؟</li>
+  <li>ماذا كتبت في الخطر المتبقي عن المجموعات المتجانسة؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع: <code>solutions/reference/treatment_reference.json</code> و<code>solutions/reference/dataset_reference.json</code>. التحقق: <code>uv run solutions/check.py 2.1</code>. المرجع يبلغ k = 5، ومتوسط خطر 0.039، ويحذف 227 سجلًا (3.8%)، وتبقى 3 مجموعات متجانسة في نوع الإصابة.</li>
+    <li>المرجع يحذف رقم البلاغ وهوية العامل والسجل التجاري والمدينة وحجم المنشأة والمهنة، ويجعل العمر ثلاث فئات والتاريخ سنة. اقبل أي معالجة تحقق المعايير الأربعة وتذكر ما خسرته؛ لا تقبل بقاء رقم البلاغ أو السجل التجاري «لأنهما ليسا اسمًا».</li>
+    <li>الفخاخ: «حذفنا الهوية فالملف مجهول»؛ رقم البلاغ معرّف إداري يربط بسجلات الهيئة؛ k وحدها لا تكفي فالحذف يتجاوز 5% بسهولة؛ في السجل ترخيص غير تجاري لا تقبله البوابة، وصيغة XLSX، وتصنيف «مقيد»، واسم بمسافات وحروف كبيرة.</li>
+    <li>من يصل إلى المعايير في محاولتين يأخذ التمرين الإضافي. من يتجاوز الخطوة 3 دون نتيجة، أعطه تلميحًا واحدًا: ما عدد القيم المختلفة في المدينة والمهنة؟</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D1_2_research.html" rel="prev">→ المختبر السابق</a><a href="D2_2_foi.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · مشاركة البيانات والبيانات المفتوحة وحرية المعلومات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع ca8704b</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T00:35:56Z","version":"2027.1.0","commit":"ca8704b"},"course":{"id":"lds-dmg-205","code":"LDS-DMG-205","title":"مشاركة البيانات والبيانات المفتوحة وحرية المعلومات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-205/","repo":"SDAIAAcademy/lds-dmg-205","home":"../index.html"},"lab":{"id":"2.1","title":"اختبار خطر مجموعة بيانات قبل نشرها","summary":"تقيس خطر إعادة تحديد الهوية في 6000 بلاغ إصابة قبل نشرها مفتوحة، وتعالج بالحذف والتعميم حتى تتحقق معايير الهيئة، وتصلح سجل البيانات الوصفية وترخيصه حتى يجتاز التحقق.","minutes":105,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_2_research.html","next":"D2_2_foi.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

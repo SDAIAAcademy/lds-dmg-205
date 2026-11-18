@@ -1,0 +1,19 @@
+﻿field,source_table,description
+worker_id,injury_reports,رقم هوية العامل
+worker_name,injury_reports,اسم العامل
+worker_mobile,injury_reports,جوال العامل
+birth_date,injury_reports,تاريخ ميلاد العامل
+gender,injury_reports,الجنس
+nationality,injury_reports,الجنسية
+occupation,injury_reports,المهنة
+injury_date,injury_reports,تاريخ الإصابة
+injury_type,injury_reports,نوع الإصابة
+days_lost,injury_reports,أيام الغياب
+narrative,injury_reports,وصف الحادث نصًا حرًا
+establishment_cr,establishments,رقم السجل التجاري للمنشأة
+establishment_name,establishments,اسم المنشأة
+sector,establishments,القطاع
+establishment_size,establishments,حجم المنشأة
+city,establishments,المدينة
+inspection_date,inspections,تاريخ زيارة التفتيش
+violations_found,inspections,عدد المخالفات في الزيارة

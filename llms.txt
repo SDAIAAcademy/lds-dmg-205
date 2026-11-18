@@ -1,0 +1,31 @@
+# مشاركة البيانات والبيانات المفتوحة وحرية المعلومات
+
+> تفرز طلبات المشاركة وتصوغ اتفاقياتها، وتبتّ في طلب بحثي، وتنشر مجموعة بيانات بخطر مقيس، وتجيب عن طلبات المعلومات بحجب مسبَّب، وتقيس أداء الإتاحة. مقرر من أكاديمية سدايا، الرمز LDS-DMG-205، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/lds-dmg-205/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/lds-dmg-205/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/lds-dmg-205/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 13,229 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/lds-dmg-205/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: طلبات المشاركة والاستخدام الثانوي](https://sdaiaacademy.github.io/lds-dmg-205/slides/day1.md): تفرز عشرة طلبات بالغرض والحد الأدنى والمسار، وتصوغ اتفاقية، وتبتّ في طلب بحثي لسجلات مرتبطة؛ الجلسات: اختبار المشاركة، الاستخدام الثانوي للبحث؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/slides/day1.html؛ نحو 5,856 من الوحدات النصية
+- [اليوم 2: البيانات المفتوحة وحرية المعلومات](https://sdaiaacademy.github.io/lds-dmg-205/slides/day2.md): تختبر خطر إعادة تحديد الهوية قبل النشر، وتجيب عن خمسة طلبات معلومات بحجب مسبب، وتبدأ مهمة المتابعة؛ الجلسات: مفتوحة بالأصل وبخطر مقيس، طلبات المعلومات وأداء الإتاحة؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/slides/day2.html؛ نحو 5,607 من الوحدات النصية
+- [المشروع الختامي: مراجعة مهمة المتابعة](https://sdaiaacademy.github.io/lds-dmg-205/slides/capstone.md): اختبار الحالة المراقب في ساعة، ثم يعرض كل مشارك تقرير أداء الإتاحة في أربع دقائق ويعيد قرارًا في ثلاث؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/slides/capstone.html؛ نحو 1,218 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: فرز عشرة طلبات](https://sdaiaacademy.github.io/lds-dmg-205/labs/D1_1_triage.md): اليوم 1، الجلسة 1، 105 دقائق؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/labs/D1_1_triage.html
+- [المختبر 1.2: البت في طلب بحثي](https://sdaiaacademy.github.io/lds-dmg-205/labs/D1_2_research.md): اليوم 1، الجلسة 2، 105 دقائق؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/labs/D1_2_research.html
+- [المختبر 2.1: اختبار خطر مجموعة بيانات قبل نشرها](https://sdaiaacademy.github.io/lds-dmg-205/labs/D2_1_open.md): اليوم 2، الجلسة 1، 105 دقائق؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/labs/D2_1_open.html
+- [المختبر 2.2: الرد على خمسة طلبات معلومات](https://sdaiaacademy.github.io/lds-dmg-205/labs/D2_2_foi.md): اليوم 2، الجلسة 2، 105 دقائق؛ الصفحة: https://sdaiaacademy.github.io/lds-dmg-205/labs/D2_2_foi.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/lds-dmg-205/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 13,229 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/lds-dmg-205/context/day1.md): اليوم 1، نحو 5,856 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/lds-dmg-205/context/day2.md): اليوم 2، نحو 5,607 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/lds-dmg-205/context/capstone.md): المشروع الختامي، نحو 1,218 من الوحدات النصية

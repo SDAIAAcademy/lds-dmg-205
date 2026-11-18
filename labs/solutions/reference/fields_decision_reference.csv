@@ -1,0 +1,19 @@
+﻿field,decision,reason
+worker_id,transform,مفتاح ربط مستعار تولده الهيئة؛ الربط يحتاج المفتاح لا الهوية
+worker_name,drop,معرِّف مباشر لا يلزم للتحليل
+worker_mobile,drop,معرِّف مباشر لا يلزم للتحليل
+birth_date,transform,العمر عند الإصابة في فئات خمسية يكفي
+gender,keep,متغير تحليلي
+nationality,keep,متغير تحليلي، في البيئة الآمنة
+occupation,keep,متغير تحليلي، في البيئة الآمنة
+injury_date,transform,الشهر يكفي لمقارنة ما قبل الزيارة وما بعدها
+injury_type,keep,النتيجة المدروسة
+days_lost,keep,مقياس الشدة
+narrative,drop,نص حر فيه أسماء وأماكن، ولا يحتاجه سؤال الدراسة
+establishment_cr,transform,مفتاح مستعار للمنشأة يكفي للربط
+establishment_name,drop,لا يلزم للتحليل، ونشر المعدلات بالاسم ليس غرض البحث
+sector,keep,متغير ضبط
+establishment_size,keep,متغير ضبط
+city,keep,متغير ضبط، والمخرجات تُفحص قبل خروجها
+inspection_date,transform,الشهر يكفي
+violations_found,keep,المتغير المستقل

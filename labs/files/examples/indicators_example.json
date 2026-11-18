@@ -1,0 +1,14 @@
+{
+  "_note": "مثال الشرائح: النصف الثاني من 2025، بلا مشكلات مزروعة",
+  "requests": "files/examples/requests_2025H2.csv",
+  "downloads": "files/examples/downloads_2025H2.csv",
+  "reuse": "files/examples/reuse_2025H2.csv",
+  "plan": "files/examples/plan_2025H2.csv",
+  "feedback": "files/examples/feedback_2025H2.csv",
+  "period_end": "2025-12-31",
+  "exclude_duplicates": true,
+  "exclude_withdrawn": true,
+  "exclude_entry_errors": true,
+  "open_requests": "late_if_past_deadline",
+  "sharing_days": "business"
+}

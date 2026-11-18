@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.2 · الرد على خمسة طلبات معلومات · مشاركة البيانات والبيانات المفتوحة وحرية المعلومات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_2_foi.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.2</span>
+<h1>الرد على خمسة طلبات معلومات</h1>
+<p>تجيب عن خمسة طلبات معلومات وصلت إلى هيئة صِيان: تحسب مهلة كل منها، وتقرر، وتحجب الجزء المحمي من سجلين بذكر فئته، وتصوغ خمسة خطابات توقّعها أنت، كلها في المهلة.</p>
+<div class="meta"><span>105 دقائق</span><span>اليوم 2</span><span>الجلسة 2: طلبات المعلومات وأداء الإتاحة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>سجل طلبات المعلومات الخمسة: آخر يوم لكل قرار، والقرار، وفئة كل حجب.</li>
+    <li>نسختان محجوبتان من سجلين يُتاحان جزئيًا، وكل حجب يذكر فئته.</li>
+    <li>خمسة خطابات في المهلة، يوقّع كل منها أنت.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/foi/deadline_rule.md" class="ai-ok"><b>foi/deadline_rule.md</b><span>قاعدة المهل في إجراء الهيئة، واليوم في الحالة. «عام».</span></a>
+  <a href="files/foi/exemptions.md" class="ai-ok"><b>foi/exemptions.md</b><span>فئات المعلومات المحمية التسع وطريقة الحجب الجزئي. «عام».</span></a>
+  <a href="files/foi/requests/F1.txt"><b>foi/requests/F1.txt إلى F5.txt</b><span>الطلبات الخمسة بأسماء مقدميها وعناوينهم. «مقيد».</span></a>
+  <a href="files/foi/records/F2_visit_2024.txt"><b>foi/records/</b><span>تقريرا زيارة، والعقد وملاحقه، ومذكرة التوصيات. «مقيد».</span></a>
+  <a href="files/foi/foi_log_template.csv"><b>foi/foi_log_template.csv</b><span>قالب السجل، صف لكل طلب.</span></a>
+  <a href="files/foi/letter_template.md" class="ai-ok"><b>foi/letter_template.md</b><span>قالب الخطاب بأقسامه. «عام».</span></a>
+  <a href="files/foi/summaries_for_assistant.md" class="ai-ok"><b>foi/summaries_for_assistant.md</b><span>ملخصات الطلبات دون أي بيانات شخصية، أعدها مكتب الإتاحة. «عام».</span></a>
+</div>
+
+<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر: كامل في الصياغة، والقرار لك.</b> يصوغ المساعد الخطابات من الملخصات العامة وقراراتك وأرقام الفئات وحدها. لا يدخله نص طلب ولا سجل ولا اسم: كلها «مقيد». الحجب تصنعه أنت، واسم مقدم الطلب يُكتب في الخطاب بعد الصياغة، وكل خطاب توقّعه أنت.</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · المهل <span class="min">10 د</span></h3>
+  <p>اقرأ قاعدة المهل، ثم احسب آخر يوم لكل طلب بيدك قبل أن تشغّل الأداة، وقارن. رتّب الطلبات بحسب ما بقي من مهلها: بها تبدأ.</p>
+  <pre class="code"><code>mkdir out
+cp files/foi/foi_log_template.csv out/foi_log.csv
+uv run kit/foi.py deadlines</code></pre>
+</div>
+
+<div class="step">
+  <h3>2 · القرار في كل طلب <span class="min">25 د</span></h3>
+  <p>لكل طلب، بهذا الترتيب: هل المعلومات لدى الهيئة ومن اختصاصها؟ هل هي منشورة؟ هل في السجل جزء محمي، وما فئته؟ هل يُتاح الباقي؟ هل يُقرَّر في المهلة أم يلزم تمديد؟ اكتب في السجل <code>due</code> و<code>decision</code> و<code>grounds</code> (أرقام الفئات).</p>
+</div>
+
+<div class="step">
+  <h3>3 · الحجب الجزئي <span class="min">20 د</span></h3>
+  <p>انسخ كل سجل تتيحه جزئيًا إلى <code>out/redacted/</code>، واستبدل كل قيمة محمية بـ <code>[محجوب: الفئة N]</code>. احجب القيمة لا الفقرة: ما يبقى ظاهرًا هو ما يحق للطالب.</p>
+  <pre class="code"><code>mkdir out/redacted
+cp files/foi/records/F2_visit_2024.txt out/redacted/</code></pre>
+</div>
+
+<div class="step">
+  <h3>4 · الخطابات الخمسة <span class="min">30 د</span></h3>
+  <p>أنشئ <code>out/letters/</code> وفيه خطاب لكل طلب من القالب. اطلب من المساعد الصياغة، وراجع كل جملة: هل تذكر القرار، وما حُجب وفئته، والتمديد إن وُجد، وحق التظلم ومهلته؟</p>
+  <div class="prompt" data-tool="مساعد محادثة">صغ خطاب رد على طلب معلومات من هيئة حكومية، بالأقسام الواردة في هذا القالب: <span class="ph">ألصق letter_template.md</span>. الطلب: <span class="ph">سطره من summaries_for_assistant.md</span>. القرار: <span class="ph">القرار</span>. ما يُتاح وما حُجب وأرقام فئاته: <span class="ph">بكلماتك، دون أي نص من السجل</span>. اترك اسم مقدم الطلب والتوقيع فارغين.</div>
+</div>
+
+<div class="step">
+  <h3>5 · الفحص والتوقيع <span class="min">10 د</span></h3>
+  <p>اكتب اسمك في سطر «وقّعه» في كل خطاب وفي عمود <code>signed_by</code>، ثم شغّل الفحص حتى ينجح. الفحص لا يعرف القرارات الصحيحة: يتحقق من الاكتمال والمهل وظهور أي رقم هوية أو جوال.</p>
+  <pre class="code"><code>uv run kit/foi.py check out</code></pre>
+</div>
+
+<div class="step">
+  <h3>6 · أصعب قرار <span class="min">10 د</span></h3>
+  <p>اعرض على زميل في دقيقتين أصعب قرار اتخذته: الوقائع، والفئة، وما أتحته رغم الحجب. يسألك زميلك سؤالًا واحدًا كما لو كان مقدم الطلب المتظلم. ثم بدّلا الدور.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>صغ إشعارًا لطلب سادس يطلب سجلات علاج المصابين في المستشفيات: هذه المعلومات ليست من اختصاص الهيئة. ماذا يذكر الإشعار، وإلى من يوجّه الطالب؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>أي طلب أقرب مهلة، وكم يومًا بقي منها في يوم الحالة؟</li>
+  <li>في أي طلبين أتحت جزءًا وحجبت جزءًا، وبأي فئات؟</li>
+  <li>ما التاريخ الجديد الذي كتبته في خطاب التمديد، ولماذا هو في الحد المسموح؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع: <code>solutions/reference/lab_2_2.json</code> والخطابات في <code>solutions/reference/letters/</code> والسجلات المحجوبة في <code>solutions/reference/redacted/</code>. التحقق: <code>uv run solutions/check.py 2.2</code>.</li>
+    <li>القرارات المتوقعة: F1 إشعار (منشورة في المنصة، والمهلة بعد يومين)؛ F2 موافقة جزئية (الفئتان 4 و9: زيارة 2024 تُتاح محجوبة، وزيارة 2026 فيها قضية مفتوحة فتُحجب كلها)؛ F3 موافقة جزئية (الفئات 6 و8 و9)؛ F4 رفض (الفئة 5)؛ F5 تمديد بتاريخ لا يتجاوز 2027-01-12.</li>
+    <li>الفخاخ: حجب العقد كله لأن فيه أسعارًا؛ رفض F4 دون ذكر أن القاعدة النافذة منشورة؛ السؤال عن سبب طلب F2 (لا يُسأل الفرد عن مصلحته)؛ لصق نص سجل في المساعد؛ خطاب F1 بتاريخ بعد 2026-11-25.</li>
+    <li>الخطابات والسجلات المحجوبة جزء من دليل ناتج التعلم الرابع: تحقق من أن كل علامة حجب تذكر فئة، وأن الجزء غير المحمي ظاهر.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_1_open.html" rel="prev">→ المختبر السابق</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · مشاركة البيانات والبيانات المفتوحة وحرية المعلومات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع ca8704b</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T00:35:56Z","version":"2027.1.0","commit":"ca8704b"},"course":{"id":"lds-dmg-205","code":"LDS-DMG-205","title":"مشاركة البيانات والبيانات المفتوحة وحرية المعلومات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-205/","repo":"SDAIAAcademy/lds-dmg-205","home":"../index.html"},"lab":{"id":"2.2","title":"الرد على خمسة طلبات معلومات","summary":"تجيب عن خمسة طلبات معلومات وصلت إلى هيئة صِيان: تحسب مهلة كل منها، وتقرر، وتحجب الجزء المحمي من سجلين بذكر فئته، وتصوغ خمسة خطابات توقّعها أنت، كلها في المهلة.","minutes":105,"day":2,"unit":"اليوم 2","session":2,"deck":"../slides/day2.html#lab-2-2","prev":"D2_1_open.html","next":null,"alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

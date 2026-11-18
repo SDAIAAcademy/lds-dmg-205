@@ -1,0 +1,26 @@
+{
+  "_note": "الحل المرجعي: حذف المعرّفات الثلاثة والمدينة والحجم والمهنة، وتعميم العمر إلى فئتين والتاريخ إلى السنة، وحذف سجلات المجموعات الأصغر من k",
+  "input": "files/open/injuries_2025.csv",
+  "drop": [
+    "report_id",
+    "worker_id",
+    "establishment_cr",
+    "city",
+    "establishment_size",
+    "occupation"
+  ],
+  "generalise": {
+    "age": "bands:18,40,65",
+    "injury_date": "year"
+  },
+  "quasi_identifiers": [
+    "region",
+    "sector",
+    "age",
+    "gender",
+    "nationality"
+  ],
+  "sensitive": "injury_type",
+  "k": 5,
+  "suppress_below_k": true
+}

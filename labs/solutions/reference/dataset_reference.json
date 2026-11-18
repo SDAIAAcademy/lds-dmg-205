@@ -1,0 +1,61 @@
+{
+  "name": "work-injuries-2025",
+  "title": "إصابات العمل المبلغ عنها في 2025 (سجلات منزوعة الهوية)",
+  "notes": "سجل لكل إصابة عمل أُبلغت بها هيئة صِيان في 2025، بعد حذف المعرّفات وتعميم العمر والمهنة والمكان، وحذف السجلات التي لا تبلغ مجموعتها خمسة. صالح لدراسة أنواع الإصابات بحسب المنطقة والقطاع والمهنة.",
+  "license_id": "sa-odl-2.0",
+  "owner_org": "siyan-osh",
+  "maintainer": "مسؤول البيانات المفتوحة وحرية المعلومات",
+  "maintainer_email": "opendata@siyan.example.org",
+  "tags": [
+    {
+      "name": "إصابات العمل"
+    },
+    {
+      "name": "السلامة المهنية"
+    },
+    {
+      "name": "سجلات منزوعة الهوية"
+    }
+  ],
+  "resources": [
+    {
+      "name": "work-injuries-2025",
+      "url": "work_injuries_2025.csv",
+      "format": "CSV"
+    }
+  ],
+  "extras": [
+    {
+      "key": "frequency",
+      "value": "سنوي"
+    },
+    {
+      "key": "temporal_coverage",
+      "value": "2025-01-01/2025-12-31"
+    },
+    {
+      "key": "spatial_coverage",
+      "value": "المناطق الخمس في نطاق الهيئة"
+    },
+    {
+      "key": "classification",
+      "value": "عام"
+    },
+    {
+      "key": "data_dictionary",
+      "value": "work_injuries_2025_dictionary.csv"
+    },
+    {
+      "key": "k_anonymity",
+      "value": "FILLED_BY_CHECK"
+    },
+    {
+      "key": "suppressed_records",
+      "value": "FILLED_BY_CHECK"
+    },
+    {
+      "key": "residual_risk",
+      "value": "في بعض المجموعات نوع إصابة واحد لكل سجلاتها، فمن يعرف أن شخصًا في المجموعة يعرف نوع إصابته. الخطر مقبول لأن نوع الإصابة لا يكشف أكثر مما يعرفه زملاء العمل، ويُراجع قبل كل إصدار."
+    }
+  ]
+}

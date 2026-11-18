@@ -1,0 +1,41 @@
+{
+  "_note": "ما تشترطه بوابة النشر في الحالة. حقول السجل على نمط package_create في CKAN، والحقول الإضافية في extras.",
+  "required": [
+    "name",
+    "title",
+    "notes",
+    "license_id",
+    "owner_org",
+    "maintainer",
+    "maintainer_email",
+    "tags",
+    "resources",
+    "extras"
+  ],
+  "name_pattern": "^[a-z0-9_-]{2,100}$",
+  "notes_min_chars": 80,
+  "tags_min": 3,
+  "licenses": {
+    "sa-odl-2.0": "رخصة البيانات المفتوحة لمنصة البيانات المفتوحة الوطنية، الإصدار 2.0",
+    "cc-by-4.0": "Creative Commons Attribution 4.0",
+    "odc-by-1.0": "Open Data Commons Attribution License 1.0",
+    "cc0-1.0": "CC0 1.0 Universal"
+  },
+  "resource_formats": [
+    "CSV",
+    "JSON"
+  ],
+  "required_extras": [
+    "frequency",
+    "temporal_coverage",
+    "spatial_coverage",
+    "classification",
+    "data_dictionary",
+    "k_anonymity",
+    "suppressed_records",
+    "residual_risk"
+  ],
+  "classification_value": "عام",
+  "residual_risk_min_chars": 60,
+  "k_min": 5
+}

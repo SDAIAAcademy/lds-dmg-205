@@ -1,0 +1,498 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-18T00:35:56Z",
+    "version": "2027.1.0",
+    "commit": "ca8704b"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "langs": [
+    "ar"
+  ],
+  "alt": {},
+  "course": {
+    "id": "lds-dmg-205",
+    "code": "LDS-DMG-205",
+    "version": "2027.1.0",
+    "title": "مشاركة البيانات والبيانات المفتوحة وحرية المعلومات",
+    "tagline": "تفرز طلبات المشاركة وتصوغ اتفاقياتها، وتبتّ في طلب بحثي، وتنشر مجموعة بيانات بخطر مقيس، وتجيب عن طلبات المعلومات بحجب مسبَّب، وتقيس أداء الإتاحة",
+    "description": "يتولى المشاركون مكتب الإتاحة في جهة افتراضية. فيفرزون طلبات المشاركة ويصوغون اتفاقية، ويبتّون في طلب بحثي، ويجيبون عن طلبات المعلومات مع حجب مبرَّر، ويعدّون مجموعة بيانات للنشر المفتوح مع اختبار لخطر إعادة تحديد الهوية والبيانات الوصفية والترخيص. ويُتناول تقويم الأثر في LDS-DMG-206، وإخفاء الهوية بعمق في DEV-SEC-303.",
+    "track": "executives",
+    "track_name": "مسار التنفيذيين والقادة",
+    "level": 200,
+    "badge": null,
+    "audience": "الممارسون. العاملون في إدارة البيانات وجودتها وحوكمتها والخصوصية والامتثال وتصنيف البيانات وإتاحتها، وخريجو القانون والمخاطر والأعمال الذين ينتقلون إلى هذه الأدوار؛ ولا تُفترض معرفة سابقة بالبرمجة.",
+    "prerequisites": [
+      "LDS-DMG-101 أسس إدارة البيانات",
+      "يطبق مستويات التصنيف على مجموعات البيانات (المقرر LDS-DMG-204 أو ما يعادله)"
+    ],
+    "url": "https://sdaiaacademy.github.io/lds-dmg-205/",
+    "repo": "SDAIAAcademy/lds-dmg-205",
+    "home": "../index.html",
+    "format": "workshop",
+    "format_note": "ورشة عمل: يومان مع مختبرات، ومهمة متابعة قصيرة",
+    "shape": "يومان تدريبيان + يوم للمشروع الختامي",
+    "hours": {
+      "instruction": 5,
+      "lab": 7,
+      "guided_self_study": 2,
+      "assessment": 1,
+      "capstone": 1,
+      "total": 16
+    },
+    "unit": "day",
+    "outcomes": [
+      {
+        "id": "LO1",
+        "text": "يطبق اختبار المشاركة على الطلبات ويصوغ اتفاقية لطلب معتمد، استنادًا إلى عشرة طلبات اصطناعية وقالب معد",
+        "level": "Applied",
+        "evidence": "سجل قرارات يطابق المرجع في ثمانية طلبات، واتفاقية تجتاز قائمة تحقق للبنود"
+      },
+      {
+        "id": "LO2",
+        "text": "يقرر في طلب بحثي لسجلات مرتبطة وفق قواعد الاستخدام الثانوي، استنادًا إلى طلب وبيانات الجهة",
+        "level": "Performance",
+        "evidence": "مذكرة تحدد الشروط والضمانات ومسار الوصول، ويُدافع عنها في المراجعة"
+      },
+      {
+        "id": "LO3",
+        "text": "يعدّ مجموعة بيانات للنشر المفتوح مع اختبار لخطر إعادة تحديد الهوية، على مجموعة بيانات لخدمة ما تحتوي على معرِّفات شبه مباشرة",
+        "level": "Applied",
+        "evidence": "الخطر قبل المعالجة وبعدها، وسجل بيانات وصفية تحقق من صحته"
+      },
+      {
+        "id": "LO4",
+        "text": "يصوغ ردودًا على طلبات المعلومات مع تسجيل أسباب الحجب، استنادًا إلى خمسة طلبات والسجلات المتعلقة بها",
+        "level": "Applied",
+        "evidence": "خمسة خطابات تذكر أسباب أي حجب، وكلها ضمن المهلة"
+      },
+      {
+        "id": "LO5",
+        "text": "يقيس أداء الإتاحة من أزمنة الاستجابة والاستخدام وإعادة الاستخدام، استنادًا إلى سجل الطلبات وإحصاءات التنزيل",
+        "level": "Applied",
+        "evidence": "تقرير يتضمن خمسة مؤشرات"
+      }
+    ],
+    "case_study": {
+      "name": "هيئة صِيان للسلامة والصحة المهنية",
+      "summary": "هيئة صِيان جهة حكومية افتراضية تفتش أماكن العمل، وتتلقى بلاغات إصابات العمل، وترخص مستشاري السلامة. يعمل المشارك في مكتب الإتاحة فيها مع مسؤول البيانات المفتوحة وحرية المعلومات سلمان القحيز، ومديرة مكتب إدارة البيانات د. وفاء الصقيه، والمستشارة القانونية جواهر الخنيزان، على ملفات اصطناعية مولدة ببذرة ثابتة: عشرة طلبات مشاركة، وطلب بحثي لسجلات مرتبطة، و6000 بلاغ إصابة لعام 2025، وخمسة طلبات معلومات وسجلاتها، وسجل طلبات نصف سنة وإحصاءات تنزيل، فيها مشكلات مزروعة ولها مفتاح إجابة للمدرب."
+    },
+    "days": [
+      {
+        "id": "day1",
+        "kind": "day",
+        "n": 1,
+        "number": 1,
+        "label": "اليوم 1",
+        "title": "طلبات المشاركة والاستخدام الثانوي",
+        "subtitle": "تفرز عشرة طلبات بالغرض والحد الأدنى والمسار، وتصوغ اتفاقية، وتبتّ في طلب بحثي لسجلات مرتبطة",
+        "shape": "جلستان · مختبران",
+        "deck": "../slides/day1.html",
+        "md": "../slides/day1.md",
+        "url": "https://sdaiaacademy.github.io/lds-dmg-205/slides/day1.html",
+        "sessions": [
+          {
+            "n": 1,
+            "label": "الجلسة 1",
+            "title": "اختبار المشاركة",
+            "summary": "المبادئ الثمانية، والغرض المشروع والحد الأدنى والمصدر الموحد، والمسارات، والأداة والموقّع بحسب المستوى، والاستخدام اللاحق وبنود الاتفاقية",
+            "outcomes": [
+              "تطبّق اختبار الغرض والحد الأدنى والجهة المصدر على طلب مشاركة",
+              "تختار المسار والأداة والموقّع بحسب الطالب ومستوى التصنيف",
+              "تصوغ بنود اتفاقية تقيّد الاستخدام اللاحق، ومنه تدريب النماذج"
+            ],
+            "lo": [
+              "LO1"
+            ],
+            "minutes": 180,
+            "lab": {
+              "id": "1.1",
+              "title": "فرز عشرة طلبات",
+              "summary": "تفرز عشرة طلبات مشاركة وردت إلى هيئة صِيان في سجل قرارات، دون أي أداة ذكاء اصطناعي، ثم تصوغ اتفاقية الطلب الخاص الذي وافقت عليه بمساعد مرشد حتى تجتاز قائمة التحقق من البنود.",
+              "minutes": 105,
+              "href": "../labs/D1_1_triage.html",
+              "steps": [
+                {
+                  "text": "اقرأ إجراء الهيئة والرموز وقائمة البيانات",
+                  "minutes": 10
+                },
+                {
+                  "text": "افرز الطلبات العشرة دون أي أداة ذكاء اصطناعي",
+                  "minutes": 35
+                },
+                {
+                  "text": "شغّل فحص السجل وأصلح ما لا يتسق",
+                  "minutes": 10
+                },
+                {
+                  "text": "قارن سجلك بسجل زميل وناقشا طلبين اختلفتما فيهما",
+                  "minutes": 10
+                },
+                {
+                  "text": "صغ اتفاقية الطلب R06 بمساعد مرشد",
+                  "minutes": 30
+                },
+                {
+                  "text": "شغّل قائمة التحقق من البنود حتى تنجح",
+                  "minutes": 10
+                }
+              ],
+              "stretch": "اكتب ردًا مسببًا على الطلب R04 في خمسة أسطر، يذكر المبدأ الذي حسم الرفض ولا يذكر غيره"
+            }
+          },
+          {
+            "n": 2,
+            "label": "الجلسة 2",
+            "title": "الاستخدام الثانوي للبحث",
+            "summary": "قواعد الاستخدام الثانوي، والربط بمفاتيح مستعارة، والضمانات الخمس، ومسارات الوصول وبيئة البحث الآمنة، وفحص المخرجات، والدفاع عن القرار",
+            "outcomes": [
+              "تحكم على غرض بحثي ومتقدمه وفق قواعد الاستخدام الثانوي",
+              "تقرر لكل حقل: يبقى أو يُحوّل أو يُحذف، وتختار مسار الوصول",
+              "تدافع عن قرارك حين يتغير مقدم الطلب أو الغرض"
+            ],
+            "lo": [
+              "LO2"
+            ],
+            "minutes": 180,
+            "lab": {
+              "id": "1.2",
+              "title": "البت في طلب بحثي",
+              "summary": "تبتّ في طلب باحثة جامعية لبلاغات إصابات مربوطة بزيارات التفتيش وبيانات المنشآت: تقرر في الحقول الثمانية عشر، وتختار مسار الوصول، وتكتب الشروط والضمانات في مذكرة، ثم تدافع عنها أمام زميل يغيّر مقدم الطلب أو الغرض.",
+              "minutes": 105,
+              "href": "../labs/D1_2_research.html",
+              "steps": [
+                {
+                  "text": "اقرأ الطلب وملاحظة التمويل ومسارات الوصول",
+                  "minutes": 10
+                },
+                {
+                  "text": "قرّر في كل حقل من الحقول الثمانية عشر وسببه",
+                  "minutes": 25
+                },
+                {
+                  "text": "اختر مسار الوصول واكتب الشروط والضمانات",
+                  "minutes": 20
+                },
+                {
+                  "text": "أكمل المذكرة بمساعد مرشد وشغّل الفحص",
+                  "minutes": 25
+                },
+                {
+                  "text": "دافع عن قرارك: يغيّر زميلك مقدم الطلب أو الغرض وتعيد القرار بصوت مسموع",
+                  "minutes": 15
+                },
+                {
+                  "text": "عدّل المذكرة بما كشفه الدفاع",
+                  "minutes": 10
+                }
+              ],
+              "stretch": "اكتب قواعد فحص المخرجات التي ستطبقها الهيئة على أول جدول تطلب الباحثة إخراجه من البيئة الآمنة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "day2",
+        "kind": "day",
+        "n": 2,
+        "number": 2,
+        "label": "اليوم 2",
+        "title": "البيانات المفتوحة وحرية المعلومات",
+        "subtitle": "تختبر خطر إعادة تحديد الهوية قبل النشر، وتجيب عن خمسة طلبات معلومات بحجب مسبب، وتبدأ مهمة المتابعة",
+        "shape": "جلستان · مختبران",
+        "deck": "../slides/day2.html",
+        "md": "../slides/day2.md",
+        "url": "https://sdaiaacademy.github.io/lds-dmg-205/slides/day2.html",
+        "sessions": [
+          {
+            "n": 1,
+            "label": "الجلسة 1",
+            "title": "مفتوحة بالأصل وبخطر مقيس",
+            "summary": "الانفتاح بوصفه الأصل وأسباب الحجب، والمعرِّفات شبه المباشرة، وإخفاء الهوية بطريقة k-anonymity وحدودها، والخلايا الصغيرة، والصيغ والبيانات الوصفية والتراخيص",
+            "outcomes": [
+              "تميّز المعرِّف المباشر والإداري وشبه المباشر في مجموعة بيانات",
+              "تقيس الخطر قبل المعالجة وبعدها وتختار التعميم والحذف",
+              "تعدّ سجل بيانات وصفية بترخيص وخطر متبقٍّ يجتاز التحقق"
+            ],
+            "lo": [
+              "LO3"
+            ],
+            "minutes": 180,
+            "lab": {
+              "id": "2.1",
+              "title": "اختبار خطر مجموعة بيانات قبل نشرها",
+              "summary": "تقيس خطر إعادة تحديد الهوية في 6000 بلاغ إصابة قبل نشرها مفتوحة، وتعالج بالحذف والتعميم حتى تتحقق معايير الهيئة، وتصلح سجل البيانات الوصفية وترخيصه حتى يجتاز التحقق.",
+              "minutes": 105,
+              "href": "../labs/D2_1_open.html",
+              "steps": [
+                {
+                  "text": "اقرأ مذكرة النشر وشغّل الأداة على الإعداد كما وصل",
+                  "minutes": 10
+                },
+                {
+                  "text": "صنّف الأعمدة: معرِّف مباشر أو إداري أو شبه مباشر",
+                  "minutes": 15
+                },
+                {
+                  "text": "جرّب الحذف والتعميم حتى تتحقق المعايير، وسجّل كل محاولة",
+                  "minutes": 35
+                },
+                {
+                  "text": "اكتب الخطر قبل المعالجة وبعدها والخطر المتبقي",
+                  "minutes": 10
+                },
+                {
+                  "text": "أصلح سجل البيانات الوصفية واختر الترخيص",
+                  "minutes": 25
+                },
+                {
+                  "text": "شغّل أداة التحقق حتى تنجح",
+                  "minutes": 10
+                }
+              ],
+              "stretch": "جرّب معالجة تحتفظ بالمهنة بدل القطاع، وقارن ما تخسره كل منهما"
+            }
+          },
+          {
+            "n": 2,
+            "label": "الجلسة 2",
+            "title": "طلبات المعلومات وأداء الإتاحة",
+            "summary": "الحق في الحصول على المعلومات والاستثناءات، وقرارات السياسة الأربعة والمهل، والإفصاح الجزئي والحجب، وخطاب الرد، ومؤشرات أداء الإتاحة وخطط النشر وملاحظات المستخدمين",
+            "outcomes": [
+              "تحسب المهل وتختار القرار المناسب لكل طلب معلومات",
+              "تحجب الجزء المحمي وحده وتذكر فئته، وتتيح الباقي",
+              "تعرّف خمسة مؤشرات لأداء الإتاحة وتقرأ ما تقوله وما لا تقوله"
+            ],
+            "lo": [
+              "LO4",
+              "LO5"
+            ],
+            "minutes": 180,
+            "lab": {
+              "id": "2.2",
+              "title": "الرد على خمسة طلبات معلومات",
+              "summary": "تجيب عن خمسة طلبات معلومات وصلت إلى هيئة صِيان: تحسب مهلة كل منها، وتقرر، وتحجب الجزء المحمي من سجلين بذكر فئته، وتصوغ خمسة خطابات توقّعها أنت، كلها في المهلة.",
+              "minutes": 105,
+              "href": "../labs/D2_2_foi.html",
+              "steps": [
+                {
+                  "text": "احسب المهل ورتّب الطلبات بحسب ما بقي منها",
+                  "minutes": 10
+                },
+                {
+                  "text": "قرّر في كل طلب وسجّل القرار والفئة في السجل",
+                  "minutes": 25
+                },
+                {
+                  "text": "احجب السجلين المتاحين جزئيًا",
+                  "minutes": 20
+                },
+                {
+                  "text": "صغ الخطابات الخمسة، والمساعد يرى الملخصات العامة وحدها",
+                  "minutes": 30
+                },
+                {
+                  "text": "شغّل الفحص ووقّع كل قرار إفصاح",
+                  "minutes": 10
+                },
+                {
+                  "text": "اعرض أصعب قرار على زميل في دقيقتين",
+                  "minutes": 10
+                }
+              ],
+              "stretch": "صغ إشعارًا لطلب سادس خارج اختصاص الهيئة: سجلات علاج المصابين في المستشفيات"
+            }
+          }
+        ]
+      },
+      {
+        "id": "capstone",
+        "kind": "capstone",
+        "n": 3,
+        "number": null,
+        "label": "المشروع الختامي",
+        "title": "مراجعة مهمة المتابعة",
+        "subtitle": "اختبار الحالة المراقب في ساعة، ثم يعرض كل مشارك تقرير أداء الإتاحة في أربع دقائق ويعيد قرارًا في ثلاث",
+        "shape": "",
+        "deck": "../slides/capstone.html",
+        "md": "../slides/capstone.md",
+        "url": "https://sdaiaacademy.github.io/lds-dmg-205/slides/capstone.html",
+        "sessions": []
+      }
+    ],
+    "capstone": {
+      "summary": "مهمة متابعة: تقرير عن أداء الإتاحة في هيئة صِيان للنصف الأول من 2026، بخمسة مؤشرات من سجل الطلبات وإحصاءات التنزيل وإجراءين للتحسين، يُراجع مراجعة قصيرة يغيّر فيها المقيِّم مقدم طلب أو غرضه ويعيد المشارك القرار بصوت مسموع",
+      "submission": "مهمة فردية تُسلَّم رابطًا لمجلد مشترك في Google Drive قبل المراجعة، فيه: إعداد أداة المؤشرات (indicators.json) وناتجها (indicators.md)، والتقرير من صفحتين بالمؤشرات الخمسة وتعريفاتها وما استُبعد، وإجراءين للتحسين لكل منهما مالك ومقياس وموعد. يجوز استعمال مساعد ذكاء اصطناعي في الصياغة على ناتج الأداة المصنف «عام» وحده، ويوقّع المشارك التقرير.",
+      "talk_minutes": 4,
+      "qa_minutes": 3,
+      "rubric": [
+        {
+          "criterion": "المؤشرات الخمسة محسوبة بتعريفات صحيحة وما استُبعد مذكور",
+          "weight": 30
+        },
+        {
+          "criterion": "قراءة ما تقوله المؤشرات وما لا تقوله",
+          "weight": 20
+        },
+        {
+          "criterion": "إجراءان للتحسين بمالك ومقياس وموعد",
+          "weight": 20
+        },
+        {
+          "criterion": "إعادة القرار بصوت مسموع حين يتغير مقدم الطلب أو الغرض",
+          "weight": 20
+        },
+        {
+          "criterion": "وضوح التقرير لرئيس الجهة",
+          "weight": 10
+        }
+      ]
+    },
+    "labs": {
+      "kind": "pages",
+      "base": "labs/"
+    },
+    "tools": [
+      {
+        "slot": "تقدير خطر إعادة تحديد الهوية وإزالة المعرِّفات",
+        "examples": [
+          "ARX",
+          "sdcMicro"
+        ]
+      },
+      {
+        "slot": "بيئة تجريبية لبوابة بيانات مفتوحة",
+        "examples": [
+          "CKAN",
+          "uData"
+        ]
+      },
+      {
+        "slot": "السجلات والاتفاقيات والخطابات",
+        "examples": [
+          "LibreOffice",
+          "Microsoft 365"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "group": "المراجع الوطنية",
+        "items": [
+          {
+            "title": "سدايا: الأنظمة والسياسات (صفحة الفهرس)",
+            "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
+          },
+          {
+            "title": "سياسة مشاركة البيانات، الإصدار 2.0 (2024)",
+            "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf"
+          },
+          {
+            "title": "Data Sharing Policy, version 2.0 (English edition)",
+            "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/DataSharingPolicyEN.pdf"
+          },
+          {
+            "title": "القواعد العامة للاستخدام الثانوي للبيانات (2025)",
+            "url": "https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_AR.pdf"
+          },
+          {
+            "title": "General Rules for Secondary Use of Data (English edition)",
+            "url": "https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_EN.pdf"
+          },
+          {
+            "title": "سياسة البيانات المفتوحة",
+            "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf"
+          },
+          {
+            "title": "Open Data Policy (English edition)",
+            "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf"
+          },
+          {
+            "title": "سياسة حرية المعلومات",
+            "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf"
+          },
+          {
+            "title": "Freedom of Information Policy (English edition)",
+            "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf"
+          },
+          {
+            "title": "الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز (2024)",
+            "url": "https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf"
+          },
+          {
+            "title": "Personal Data Destruction, Anonymization and Pseudonymisation Guideline (English edition)",
+            "url": "https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndEncryptionGuideline.pdf"
+          },
+          {
+            "title": "مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)",
+            "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf"
+          },
+          {
+            "title": "Generative AI Guidelines for Government (English edition)",
+            "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf"
+          },
+          {
+            "title": "منصة البيانات المفتوحة",
+            "url": "https://open.data.gov.sa/"
+          },
+          {
+            "title": "Open Data Platform: Open Data License, version 2.0 (March 2023)",
+            "url": "https://open.data.gov.sa/odp-public/static/en/assets/Open_Data_License_En.pdf"
+          }
+        ]
+      },
+      {
+        "group": "المعايير والأساليب",
+        "items": [
+          {
+            "title": "L. Sweeney, k-anonymity: a model for protecting privacy, 2002",
+            "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf"
+          },
+          {
+            "title": "ARX: privacy models (k-anonymity, average risk, sample uniqueness, l-diversity)",
+            "url": "https://arx.deidentifier.org/overview/privacy-criteria/"
+          },
+          {
+            "title": "UK Data Service: What is the Five Safes framework?",
+            "url": "https://ukdataservice.ac.uk/help/secure-lab/what-is-the-five-safes-framework/"
+          },
+          {
+            "title": "Creative Commons Attribution 4.0 International (deed)",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          {
+            "title": "CC0 1.0 Universal (deed)",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+          },
+          {
+            "title": "Open Data Commons Attribution License (ODC-By) v1.0",
+            "url": "https://opendatacommons.org/licenses/by/1-0/"
+          }
+        ]
+      },
+      {
+        "group": "الأدوات",
+        "items": [
+          {
+            "title": "ARX Data Anonymization Tool",
+            "url": "https://arx.deidentifier.org/"
+          },
+          {
+            "title": "sdcMicro on CRAN (5.8.2, June 2026)",
+            "url": "https://cran.r-project.org/package=sdcMicro"
+          },
+          {
+            "title": "CKAN API guide: package_create",
+            "url": "https://docs.ckan.org/en/latest/api/index.html"
+          },
+          {
+            "title": "uData (opendatateam) on GitHub",
+            "url": "https://github.com/opendatateam/udata"
+          }
+        ]
+      }
+    ]
+  }
+}

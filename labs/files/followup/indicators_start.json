@@ -1,0 +1,14 @@
+{
+  "_note": "الإعداد كما وصل من فريق التقارير",
+  "requests": "files/followup/requests_2026H1.csv",
+  "downloads": "files/followup/downloads_2026H1.csv",
+  "reuse": "files/followup/reuse_2026H1.csv",
+  "plan": "files/followup/plan_2026H1.csv",
+  "feedback": "files/followup/feedback_2026H1.csv",
+  "period_end": "2026-06-30",
+  "exclude_duplicates": false,
+  "exclude_withdrawn": false,
+  "exclude_entry_errors": false,
+  "open_requests": "ignore",
+  "sharing_days": "calendar"
+}
