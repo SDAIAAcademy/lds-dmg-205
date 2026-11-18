@@ -33,5 +33,6 @@ followup/plan_2026H1.csv,عام,خطة النشر المعتمدة والمنش�
 followup/feedback_2026H1.csv,مقيد,ملاحظات المستخدمين، وقد تحمل بيانات شخصية
 followup/brief.md,عام,موجز مهمة المتابعة
 followup/report_template.md,عام,قالب التقرير
+out/risk_report.json,عام,ناتج أداة الخطر: مقاييس مجمّعة بلا سجل فردي
 out/indicators.md,عام,ناتج أداة المؤشرات: أعداد ونسب مجمّعة بلا سجل فردي
 examples/*,عام,أمثلة الشرائح، اصطناعية

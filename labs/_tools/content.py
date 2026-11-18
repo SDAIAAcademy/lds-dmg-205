@@ -94,6 +94,7 @@ REGISTER = [
     ("followup/feedback_2026H1.csv", RESTRICTED, "ملاحظات المستخدمين، وقد تحمل بيانات شخصية"),
     ("followup/brief.md", PUBLIC, "موجز مهمة المتابعة"),
     ("followup/report_template.md", PUBLIC, "قالب التقرير"),
+    ("out/risk_report.json", PUBLIC, "ناتج أداة الخطر: مقاييس مجمّعة بلا سجل فردي"),
     ("out/indicators.md", PUBLIC, "ناتج أداة المؤشرات: أعداد ونسب مجمّعة بلا سجل فردي"),
     ("examples/*", PUBLIC, "أمثلة الشرائح، اصطناعية"),
 ]

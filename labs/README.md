@@ -9,10 +9,10 @@
 - الأوامر كلها تُشغّل من هذا المجلد (`labs`)، وكل ناتج يُكتب في `out/`، وهو مستبعد من المستودع.
 
 ```
-uv run kit/foi.py deadlines
+uv run kit/indicators.py files/examples/indicators_example.json
 ```
 
-إن طبع الأمر جدولًا بخمسة طلبات، فالتجهيز تام.
+إن طبع الأمر خمسة مؤشرات لملف المثال، فالتجهيز تام.
 
 ### في Google Colab
 
@@ -21,7 +21,7 @@ uv run kit/foi.py deadlines
 ```
 !git clone <عنوان المستودع>
 %cd <اسم المستودع>/labs
-!python kit/foi.py deadlines
+!python kit/indicators.py files/examples/indicators_example.json
 ```
 
 أوامر `mkdir` و`cp` في صفحات المختبرات تُكتب في Colab بعلامة `!` قبلها.

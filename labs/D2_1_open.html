@@ -20,7 +20,7 @@
 </div>
 <p class="small">جدول بيانات ومحرر نصوص. الأوامر تُشغّل من مجلد <code>labs</code>، وتكتب في <code>out/</code>.</p>
 
-<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر: مرشد.</b> يشرح مقياسًا أو يقترح تعميمًا تجربه أنت. يرى القاموس والتدرجات وملفي الإعداد والسجل والملف التعريفي للبوابة، وهي «عام». ملف البلاغات «مقيد» قبل المعالجة، فلا يدخله لا هو ولا جزء منه، ولا ناتج <code>out/release.csv</code> قبل أن يجتاز المعايير ويُعتمد.</div>
+<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر: مرشد.</b> يشرح مقياسًا أو يقترح تعميمًا تجربه أنت. يرى القاموس والتدرجات وملفي الإعداد والسجل والملف التعريفي للبوابة، ومقاييس <code>out/risk_report.json</code> المجمّعة، وكلها «عام» في السجل. ملف البلاغات «مقيد» قبل المعالجة، فلا يدخله لا هو ولا جزء منه، ولا ناتج <code>out/release.csv</code> قبل أن يجتاز المعايير ويُعتمد.</div>
 
 <h2>الخطوات</h2>
 
@@ -41,7 +41,7 @@ uv run kit/risk.py files/open/treatment_start.json</code></pre>
   <h3>3 · الحذف والتعميم <span class="min">35 د</span></h3>
   <p>عدّل <code>drop</code> و<code>generalise</code> و<code>quasi_identifiers</code> في <code>out/treatment.json</code>، وفعّل <code>suppress_below_k</code>، ثم شغّل الأداة. بعد كل تشغيل اكتب سطرًا في <code>out/attempts.md</code>: ما غيّرت، وk، ومتوسط الخطر، ونسبة المحذوف. التعميمات المتاحة في رأس <code>kit/risk.py</code>.</p>
   <pre class="code"><code>uv run kit/risk.py out/treatment.json</code></pre>
-  <div class="prompt" data-tool="مساعد محادثة، مرشدًا">أعالج مجموعة بيانات قبل نشرها. هذه أعمدتها ومعانيها: <span class="ph">ألصق dictionary.csv</span>. وهذه نتيجة آخر محاولة: k وأعلى خطر ومتوسط الخطر ونسبة المحذوف <span class="ph">الأرقام الأربعة</span>. لا تكتب لي الإعداد. اسألني أي عمود يخدم مستخدمي البيانات أقل، وما يخسره كل تعميم.</div>
+  <div class="prompt" data-tool="مساعد محادثة، مرشدًا">أعالج مجموعة بيانات قبل نشرها. هذه أعمدتها ومعانيها: <span class="ph">ألصق dictionary.csv</span>. وهذه نتيجة آخر محاولة: k وأعلى خطر ومتوسط الخطر ونسبة المحذوف <span class="ph">الأرقام الأربعة من out/risk_report.json</span>. لا تكتب لي الإعداد. اسألني أي عمود يخدم مستخدمي البيانات أقل، وما يخسره كل تعميم.</div>
 </div>
 
 <div class="step">

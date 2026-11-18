@@ -135,7 +135,7 @@ Data Sharing, Open Data and Freedom of Information
 - [Open Data Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf)
 - [سياسة حرية المعلومات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf)
 - [Freedom of Information Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf)
-- [دليل إتلاف البيانات الشخصية وإخفاء هويتها وترميزها، الإصدار 1.0 (2024)](https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf)
+- [الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز (2024)](https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf)
 - [Personal Data Destruction, Anonymization and Pseudonymisation Guideline (English edition)](https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndEncryptionGuideline.pdf)
 - [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
 - [Generative AI Guidelines for Government (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf)
@@ -166,6 +166,7 @@ Data Sharing, Open Data and Freedom of Information
 - سياسة البيانات المفتوحة: https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf (والإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf)
 - سياسة حرية المعلومات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf (والإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf)
 - قناة التكامل الحكومية وسوق البيانات: لم نجد صفحة رسمية لكل منهما نستشهد بها في 2026-11-18؛ يعرّفهما المقرر بتعريفات سياسة مشاركة البيانات (التعريفان 12 و13). منصة البيانات المفتوحة: https://open.data.gov.sa/ ، ورخصتها: https://open.data.gov.sa/odp-public/static/en/assets/Open_Data_License_En.pdf
+- الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز (2024): https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf (والإنجليزية: https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndEncryptionGuideline.pdf). قُرئت الإنجليزية؛ العنوان العربي من صفحة الأنظمة والسياسات، ولم يُفتح الملف العربي لأن الموقع رفض التنزيل الآلي.
 - مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)، ومنها قاعدة المقرر في ما يدخل أدوات الذكاء الاصطناعي: https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf
 
-عناوين ملفات سدايا مأخوذة من صفحة الأنظمة والسياسات (https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)، وفُتح كل ملف منها في 2026-11-18. إصدارات السياسات ومهلها ومسارات المنصات وشروط التراخيص تتغير: تحقق منها قبل كل دفعة.
+عناوين ملفات سدايا مأخوذة من صفحة الأنظمة والسياسات (https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)، وفُتح كل ملف منها في 2026-11-18، إلا ما ذُكر أعلاه. إصدارات السياسات ومهلها ومسارات المنصات وشروط التراخيص تتغير: تحقق منها قبل كل دفعة.
