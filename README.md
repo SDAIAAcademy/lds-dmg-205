@@ -94,7 +94,7 @@ Data Sharing, Open Data and Freedom of Information
 ## سياسة الذكاء الاصطناعي في المقرر
 
 - دون ذكاء اصطناعي: اختبار الحالة، والفرز الأول للطلبات العشرة (المختبر 1.1).
-- مرشد: صياغة الاتفاقية (المختبر 1.1) وقرار الطلب البحثي (المختبر 1.2). المساعد يسأل ويشرح ولا يكتب القرار.
+- مرشد: صياغة الاتفاقية (المختبر 1.1)، وقرار الطلب البحثي (المختبر 1.2)، والمعالجة وسجل البيانات الوصفية (المختبر 2.1). المساعد يسأل ويشرح ولا يكتب القرار.
 - كامل: الخطابات (المختبر 2.2) والتقرير (مهمة المتابعة)، ويوقّع المشارك كل قرار إفصاح.
 - في كل الأحوال: لا يدخل أي أداة ذكاء اصطناعي توليدي ملف مصنف «مقيد» فأعلى، معتمدة كانت الأداة أم لا، اتباعًا لمبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية. كل ملف في المختبرات له تصنيف في `labs/files/register.csv`، وصفحة كل مختبر تعلّم الملفات «العامة» التي يجوز أن يراها المساعد. الخطابات تُصاغ من ملخصات عامة أعدها مكتب الإتاحة، والتقرير من ناتج أداة المؤشرات المجمّع.
 
@@ -135,6 +135,8 @@ Data Sharing, Open Data and Freedom of Information
 - [Open Data Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf)
 - [سياسة حرية المعلومات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf)
 - [Freedom of Information Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf)
+- [دليل إتلاف البيانات الشخصية وإخفاء هويتها وترميزها، الإصدار 1.0 (2024)](https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndPseudonymisationGuidelineAR.pdf)
+- [Personal Data Destruction, Anonymization and Pseudonymisation Guideline (English edition)](https://sdaia.gov.sa/Documents/PersonalDataDestructionAnonymizationAndEncryptionGuideline.pdf)
 - [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
 - [Generative AI Guidelines for Government (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf)
 - [منصة البيانات المفتوحة](https://open.data.gov.sa/)
