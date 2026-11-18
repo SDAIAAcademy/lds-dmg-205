@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Validate a dataset record against the case's portal profile (lab 2.1). From the labs/ folder:
 
     uv run kit/metadata_check.py files/open/dataset_start.json   # the record as it arrived

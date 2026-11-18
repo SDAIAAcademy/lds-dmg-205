@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Re-identification risk before and after a treatment (lab 2.1). From the labs/ folder:
 
     uv run kit/risk.py files/open/treatment_start.json      # the treatment as it arrived

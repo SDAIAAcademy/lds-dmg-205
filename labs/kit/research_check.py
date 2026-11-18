@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Check a research decision: the field decisions and the memo (lab 1.2). From the labs/ folder:
 
     uv run kit/research_check.py out/fields_decision.csv out/research_memo.md

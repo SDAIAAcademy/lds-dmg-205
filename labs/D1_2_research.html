@@ -1,37 +1,79 @@
 <article class="lab" data-lab="1.2">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>قرار لكل حقل من الحقول الثمانية عشر في طلب د. حنين البواردي: يبقى، أو يُحوّل، أو يُحذف، مع سببه.</li>
+    <li>مذكرة قرار بالشروط والضمانات ومسار الوصول والمدة، دافعت عنها أمام زميل غيّر مقدم الطلب أو الغرض.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="تقدير خطر إعادة تحديد الهوية وإزالة المعرِّفات">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/research/research_request.txt"><b>research/research_request.txt</b><span>الطلب كما وصل بالبريد. «مقيد».</span></a>
+  <a href="files/research/funding_note.txt"><b>research/funding_note.txt</b><span>مراسلة الممول. «مقيد».</span></a>
+  <a href="files/research/fields_requested.csv" class="ai-ok"><b>research/fields_requested.csv</b><span>الحقول الثمانية عشر وجداولها ووصفها، دون قيم. «عام».</span></a>
+  <a href="files/research/access_routes.md" class="ai-ok"><b>research/access_routes.md</b><span>مسارات الوصول الثلاثة في الهيئة وقواعد البيئة الآمنة. «عام».</span></a>
+  <a href="files/research/fields_decision_template.csv"><b>research/fields_decision_template.csv</b><span>قالب قرارات الحقول.</span></a>
+  <a href="files/research/memo_template.md" class="ai-ok"><b>research/memo_template.md</b><span>قالب المذكرة بأقسامها العشرة. «عام».</span></a>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر: مرشد.</b> يسألك ويناقش استدلالك، ولا يكتب القرار. يرى الملفات المصنفة «عام» وحدها: الطلب والتمويل «مقيد»، فلخّصهما بكلماتك دون اسم ولا بريد ولا جوال.</div>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>1 · الطلب والتمويل ومسارات الوصول <span class="min">10 د</span></h3>
+  <p>اقرأ الطلب وضع خطًا تحت كل جملة ستحتاج إلى شرط. ثم ملاحظة التمويل: ماذا يحصل عليه الممول؟ ثم المسارات الثلاثة.</p>
+  <pre class="code"><code>cp files/research/fields_decision_template.csv out/fields_decision.csv
+cp files/research/memo_template.md out/research_memo.md</code></pre>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>2 · قرار لكل حقل <span class="min">25 د</span></h3>
+  <p>اسأل لكل حقل: هل يحتاجه سؤال الدراسة؟ وإن احتاجه، هل يكفي شكل أخف منه؟ اكتب <code>keep</code> أو <code>transform</code> أو <code>drop</code> والسبب. الربط بين الجداول يحتاج مفتاحًا، لا هوية.</p>
+</div>
+
+<div class="step">
+  <h3>3 · المسار والشروط والضمانات <span class="min">20 د</span></h3>
+  <p>اختر المسار الذي يناسب سجلات مرتبطة على مستوى الفرد. ثم افصل ما يجب قبل الوصول (المتقدم، والموافقات، والتدريب) عما يُضمن أثناءه (التنزيل، والسجل، وفحص المخرجات).</p>
+</div>
+
+<div class="step">
+  <h3>4 · المذكرة والفحص <span class="min">25 د</span></h3>
+  <p>أكمل أقسام المذكرة العشرة. اطلب من المساعد أن يتحداك لا أن يكتب.</p>
+  <div class="prompt" data-tool="مساعد محادثة، مرشدًا">أنا أقرر في طلب بحثي لسجلات مرتبطة لأغراض البحث. هذه خلاصة قراري بلا أي بيانات شخصية: <span class="ph">القرار والمسار والشروط في خمسة أسطر</span>. لا تعِد الكتابة. اسألني عن أضعف نقطتين.</div>
+  <pre class="code"><code>uv run kit/research_check.py out/fields_decision.csv out/research_memo.md</code></pre>
+</div>
+
+<div class="step">
+  <h3>5 · الدفاع <span class="min">15 د</span></h3>
+  <p>اعرض قرارك على زميل في دقيقتين. يغيّر زميلك واقعة واحدة: مقدم الطلب (الممول نفسه، أو طالب دراسات عليا) أو الغرض (منتج تجاري، أو جداول فقط). أعد قرارك بصوت مسموع واذكر المبدأ الذي غيّره. ثم بدّلا الدور.</p>
+</div>
+
+<div class="step">
+  <h3>6 · ما كشفه الدفاع <span class="min">10 د</span></h3>
+  <p>اكتب في القسم الأخير من المذكرة ما يتغير لو تغير مقدم الطلب أو الغرض، وأصلح ما كشفه السؤال في الأقسام الأخرى. شغّل الفحص مرة أخيرة.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب قواعد فحص المخرجات التي ستطبقها الهيئة على أول جدول تطلب الباحثة إخراجه من البيئة الآمنة.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم حقلًا يبقى، وكم يُحوّل، وكم يُحذف؟ وأي حقل ترددت فيه أكثر؟</li>
+  <li>لماذا لا يصلح المستخرج المنزوع الهوية مسارًا لهذا الطلب؟</li>
+  <li>ماذا قلت عن الممول، وعلى أي قاعدة؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع: <code>solutions/reference/fields_decision_reference.csv</code> (يبقى 9، يُحوّل 5، يُحذف 4) و<code>solutions/reference/research_memo_reference.md</code>. التحقق: <code>uv run solutions/check.py 1.2</code>.</li>
+    <li>القرار المتوقع: موافقة بشروط عبر بيئة البحث الآمنة. اقبل الخلاف في المدينة والجنسية والمهنة (يبقى أو يُعمّم) إن كان السبب مكتوبًا. لا تقبل بقاء الهوية أو الاسم أو الجوال أو الوصف الحر.</li>
+    <li>الفخاخ: الطلب شخصي لا عبر الجامعة؛ الممول شركة تأمين تريد البيانات لمنتجاتها (غرض ربحي، والتمويل لا يمنح وصولًا)؛ عشر سنوات «لدراسات لاحقة»؛ معدلات بأسماء المنشآت؛ نموذج يُنشر مفتوحًا قد يحمل سجلات فردية.</li>
+    <li>الدفاع جزء من دليل ناتج التعلم الثاني: سجّل لكل مشارك هل أعاد القرار صحيحًا وذكر المبدأ.</li>
+  </ul>
+</details>
 </article>

@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Generate every file of the LDS-DMG-205 labs, with a fixed seed. From the labs/ folder:
 
     uv run --no-project _tools/prepare_files.py

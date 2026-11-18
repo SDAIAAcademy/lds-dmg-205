@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Run every lab's reference solution and assert its numbers. From the labs/ folder:
 
     uv run solutions/check.py              # every lab, the follow-up task and the AI-use rule

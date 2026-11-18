@@ -1,37 +1,81 @@
 <article class="lab" data-lab="1.1">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>سجل قرارات لعشرة طلبات مشاركة وردت إلى هيئة صِيان: القرار، والمسار، والأداة النظامية، والموقّع، والسبب لكل طلب.</li>
+    <li>اتفاقية مشاركة بيانات للطلب R06 تجتاز قائمة التحقق من البنود.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="تقدير خطر إعادة تحديد الهوية وإزالة المعرِّفات">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/triage/sharing_procedure.md" class="ai-ok"><b>triage/sharing_procedure.md</b><span>إجراء الهيئة لطلبات المشاركة: الاختبار، والمسارات، والأداة والموقّع، والمهل. «عام».</span></a>
+  <a href="files/triage/codes.md" class="ai-ok"><b>triage/codes.md</b><span>رموز السجل الأربعة ومعانيها. «عام».</span></a>
+  <a href="files/triage/data_inventory.csv"><b>triage/data_inventory.csv</b><span>مجموعات بيانات الهيئة بمستوى تصنيفها وجهتها المصدر، وهل هي منشورة. «مقيد».</span></a>
+  <a href="files/triage/requests/R01.txt"><b>triage/requests/R01.txt إلى R10.txt</b><span>الطلبات العشرة. «مقيد».</span></a>
+  <a href="files/triage/decision_log_template.csv"><b>triage/decision_log_template.csv</b><span>قالب السجل، صف لكل طلب.</span></a>
+  <a href="files/triage/agreement_template.md" class="ai-ok"><b>triage/agreement_template.md</b><span>قالب الاتفاقية ببنوده الأربعة عشر. «عام».</span></a>
+</div>
+<p class="small">جدول بيانات (LibreOffice Calc أو Microsoft Excel) ومحرر نصوص. الأوامر تُشغّل من مجلد <code>labs</code>، وتكتب في <code>out/</code>.</p>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<div class="callout warn"><b>الذكاء الاصطناعي في هذا المختبر.</b> الفرز (الخطوات 1 إلى 4) دون أي أداة ذكاء اصطناعي. في الاتفاقية (الخطوة 5) المساعد مرشد: يسألك ويشرح، ولا يكتب البنود عنك. لا تعطه إلا الملفات المصنفة «عام» في <code>files/register.csv</code>، وهي المعلَّمة أعلاه؛ نص الطلب R06 «مقيد» فلا يدخله.</div>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>1 · الإجراء والرموز وقائمة البيانات <span class="min">10 د</span></h3>
+  <p>اقرأ إجراء الهيئة كله، ثم الرموز. افتح قائمة البيانات واكتب بجانب كل مجموعة مستواها وجهتها المصدر: ستحتاجهما في كل طلب.</p>
+  <pre class="code"><code>mkdir out
+cp files/triage/decision_log_template.csv out/decision_log.csv</code></pre>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>2 · فرز الطلبات العشرة <span class="min">35 د</span></h3>
+  <p>لكل طلب، بهذا الترتيب: هل هو طلب مشاركة أصلًا؟ ما مستوى البيانات؟ هل الغرض مشروع؟ هل المطلوب هو الحد الأدنى؟ من الجهة المصدر؟ ثم اختر القرار والمسار والأداة والموقّع من <code>codes.md</code>، واكتب في <code>reason</code> المبدأ الذي حسم القرار. نحو ثلاث دقائق لكل طلب.</p>
+</div>
+
+<div class="step">
+  <h3>3 · فحص السجل <span class="min">10 د</span></h3>
+  <p>الفحص لا يعرف الإجابات. يتحقق من أن كل صف مكتمل ومتسق مع الإجراء: لا مسار لطلب مرفوض، ولا اتفاقية دون موقّع.</p>
+  <pre class="code"><code>uv run kit/triage_check.py log out/decision_log.csv</code></pre>
+</div>
+
+<div class="step">
+  <h3>4 · المقارنة مع زميل <span class="min">10 د</span></h3>
+  <p>قارنا سجليكما واختارا طلبين اختلفتما فيهما. لكل منهما: أي سطر في الإجراء يحسم الخلاف؟ عدّل سجلك إن اقتنعت، واكتب السبب.</p>
+</div>
+
+<div class="step">
+  <h3>5 · اتفاقية الطلب R06 <span class="min">30 د</span></h3>
+  <p>انسخ القالب إلى <code>out/agreement.md</code> وأكمل كل بند. اسأل المساعد عن معنى بند أو عن ثغرة في صياغتك، لا عن البند نفسه.</p>
+  <div class="prompt" data-tool="مساعد محادثة، مرشدًا">أنا أصوغ اتفاقية مشاركة بيانات لجهة خاصة تنفذ حملة توعية لصالح جهة حكومية. لا تكتب البنود. اسألني ثلاثة أسئلة تكشف ما ينقص في بند <span class="ph">قيود الاستخدام والاستخدام اللاحق</span> الذي سألصقه بعد هذا.</div>
+</div>
+
+<div class="step">
+  <h3>6 · قائمة التحقق من البنود <span class="min">10 د</span></h3>
+  <p>شغّل القائمة وأصلح ما تذكره حتى تنجح.</p>
+  <pre class="code"><code>uv run kit/triage_check.py agreement out/agreement.md</code></pre>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب ردًا مسببًا على الطلب R04 في خمسة أسطر، يذكر المبدأ الذي حسم الرفض ولا يذكر غيره.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم طلبًا من العشرة ليس طلب مشاركة أصلًا، وإلى أين أحلته؟</li>
+  <li>أي طلبين يوقّع عليهما موقّعان مختلفان، ولماذا؟</li>
+  <li>ما الحقلان اللذان حذفتهما من طلب R06، وأين ذكرت ذلك في الاتفاقية؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المرجع: <code>solutions/reference/decision_log_reference.csv</code> و<code>solutions/reference/agreement_reference.md</code>. التحقق: <code>uv run solutions/check.py 1.1</code>. لتقدير سجل مشارك: <code>uv run solutions/score_triage.py &lt;سجله&gt;</code> (الحد ثمانية من عشرة).</li>
+    <li>الصف يطابق إذا طابقت خاناته الأربع. R10 يقبل <code>gov_platforms</code> أو <code>secure_channel</code>.</li>
+    <li>الفخاخ: R02 تحليلي فمكانه بنك البيانات الوطني؛ R03 رقابي فيُسجل دون اتفاقية؛ R05 يسمي التدريب «مصلحة عامة» وهو ربحي؛ R07 مصدره جهة أخرى؛ R08 عام منشور، وطالبه يعرض نموذج ضوابط لا يلزم؛ R09 فرد، فهو طلب معلومات.</li>
+    <li>في الاتفاقية: الهوية وتاريخ الميلاد لا يُشاركان؛ الاحتفاظ بعد الحملة والتدريب وعملاء الشركة الآخرون ممنوعة؛ يوقّع مدير مكتب إدارة البيانات لأن البيانات «مقيد».</li>
+  </ul>
+</details>
 </article>

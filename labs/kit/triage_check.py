@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Check a sharing decision log and a draft agreement (lab 1.1). From the labs/ folder:
 
     uv run kit/triage_check.py log out/decision_log.csv

@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Information requests: deadlines, letters and redactions (lab 2.2). From the labs/ folder:
 
     uv run kit/foi.py deadlines                 # due date of each request under the case's rule

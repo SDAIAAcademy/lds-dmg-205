@@ -5,7 +5,7 @@ Data Sharing, Open Data and Freedom of Information
 
 مسار التنفيذيين والقادة · أكاديمية سدايا · LDS-DMG-205 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تفرز طلبات المشاركة وتصوغ اتفاقياتها، وتبتّ في طلب بحثي، وتنشر مجموعة بيانات بخطر مقيس، وتجيب عن طلبات المعلومات بحجب مسبَّب، وتقيس أداء الإتاحة
 
 يتولى المشاركون مكتب الإتاحة في جهة افتراضية. فيفرزون طلبات المشاركة ويصوغون اتفاقية، ويبتّون في طلب بحثي، ويجيبون عن طلبات المعلومات مع حجب مبرَّر، ويعدّون مجموعة بيانات للنشر المفتوح مع اختبار لخطر إعادة تحديد الهوية والبيانات الوصفية والترخيص. ويُتناول تقويم الأثر في LDS-DMG-206، وإخفاء الهوية بعمق في DEV-SEC-303.
 
@@ -29,13 +29,28 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
+| اليوم 1 | طلبات المشاركة والاستخدام الثانوي | اختبار المشاركة; الاستخدام الثانوي للبحث | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | البيانات المفتوحة وحرية المعلومات | مفتوحة بالأصل وبخطر مقيس; طلبات المعلومات وأداء الإتاحة | [`slides/day2.html`](slides/day2.html) |
+| المشروع الختامي | مراجعة مهمة المتابعة |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
 
-**REPLACE: اسم الجهة الافتراضية التي تعمل عليها كل المختبرات.** REPLACE: جملتان عن دراسة الحالة وبياناتها الاصطناعية
+**هيئة صِيان للسلامة والصحة المهنية.** جهة حكومية افتراضية تفتش أماكن العمل، وتتلقى بلاغات إصابات العمل، وترخص مستشاري السلامة. يعمل المشارك في مكتب الإتاحة فيها مع مسؤول البيانات المفتوحة وحرية المعلومات سلمان القحيز، ومديرة مكتب إدارة البيانات د. وفاء الصقيه، والمستشارة القانونية جواهر الخنيزان. كل الأسماء والجهات والسجلات اصطناعية: أرقام الهوية تبدأ بالرقم 9، وأرقام السجل التجاري بـ CR-9، والجوالات بـ 0599، والبريد بنطاق example.org.
+
+الملفات يولدها `labs/_tools/prepare_files.py` ببذرة ثابتة (205): عشرة طلبات مشاركة، وطلب بحثي لسجلات مرتبطة، و6000 بلاغ إصابة لعام 2025، وخمسة طلبات معلومات وسجلاتها، وسجل طلبات النصف الأول من 2026 وإحصاءات تنزيله. في كل منها مشكلات مزروعة، ولها مفتاح إجابة للمدرب في `labs/solutions/`. لكل ملف تصنيف في سجل الهيئة (`labs/files/register.csv`). إجراءات الهيئة في الملفات (المسارات، والمهل كما تقرؤها، وفئات الحجب، ومعايير النشر) قراءة الجهة الافتراضية للسياسات الوطنية، والمرجع هو نص السياسات.
+
+## كيف تُوزع الساعات
+
+| بند الساعات في الكتالوج | الساعات | أين |
+|---|---|---|
+| التعليم | 5 | أربع جلسات، في كل منها 75 دقيقة للمفاهيم ونقاط التحقق |
+| المختبرات | 7 | أربعة مختبرات، مدة كل منها 105 دقائق |
+| التعلم الذاتي الموجه | 2 | مهمة المتابعة: تقرير أداء الإتاحة، بين الورشة ولقاء المتابعة |
+| التقييم | 1 | اختبار الحالة المراقب، في الساعة الأولى من لقاء المتابعة |
+| المشروع الختامي | 1 | مراجعة التقارير، في الساعة الثانية من لقاء المتابعة |
+
+كل يوم من يومي الورشة جلستان من 180 دقيقة. المراجعة سبع دقائق لكل مشارك (أربع للعرض وثلاث للأسئلة)، فالساعة تتسع لثمانية مشاركين؛ الدفعة الأكبر تُقسّم على غرف، في كل غرفة مقيّم.
 
 <!-- academy:labs -->
 ## المختبرات
@@ -44,15 +59,52 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | فرز عشرة طلبات | [`D1_1_triage.html`](labs/D1_1_triage.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | البت في طلب بحثي | [`D1_2_research.html`](labs/D1_2_research.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | اختبار خطر مجموعة بيانات قبل نشرها | [`D2_1_open.html`](labs/D2_1_open.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | الرد على خمسة طلبات معلومات | [`D2_2_foi.html`](labs/D2_2_foi.html) |
 <!-- /academy:labs -->
+
+### تشغيل المختبرات
+
+المختبرات صفحات إرشادية، والعمل فيها في جدول بيانات ومحرر نصوص. أدوات الفحص الصغيرة في `labs/kit/` مكتوبة بمكتبة بايثون القياسية وحدها، وتُشغّل من مجلد `labs` بـ `uv run kit/<الأداة>.py`، أو بـ `python` في Google Colab. لا يحتاج أي مختبر خادمًا ولا حسابًا ولا نموذجًا. التفاصيل ونقطة بداية كل مختبر وحله في `labs/README.md`.
+
+أدوات الكتالوج في سطر «تقدير الخطر» و«بوابة البيانات المفتوحة» (ARX وsdcMicro، وCKAN وuData) أمثلة قابلة للتبديل. أداة `kit/risk.py` تحسب المقاييس التي يوثقها ARX لنماذجه (فئات التكافؤ، وأعلى خطر، ومتوسط الخطر، والسجلات الفريدة، والمجموعات المتجانسة)، وسجل البيانات الوصفية يتبع حقول `package_create` في CKAN. من لديه إحدى الأداتين يستطيع أن يعيد الاختبار فيها على الملف نفسه.
+
+## المشروع الختامي: مهمة المتابعة
+
+تقرير عن أداء الإتاحة في هيئة صِيان للنصف الأول من 2026: خمسة مؤشرات من سجل الطلبات وإحصاءات التنزيل (زمن الاستجابة، ونسبة القرارات في المهلة، ونسبة الموافقة، وإعادة الاستخدام، وتقدم خطة النشر)، مع تعريف كل مؤشر وما استُبعد، وإجراءان للتحسين لكل منهما مالك ومقياس وموعد. الموجز في `labs/files/followup/brief.md`.
+
+**التسليم:** مهمة فردية تُسلَّم رابطًا لمجلد مشترك في Google Drive قبل المراجعة.
+
+**المراجعة:** أربع دقائق للتقرير، ثم ثلاث دقائق يغيّر فيها المقيِّم مقدم طلب أو غرضه، ويعيد المشارك القرار بصوت مسموع.
+
+**سلم التقدير** (يقدّر التقرير ومراجعته وحدهما): المؤشرات الخمسة بتعريفات صحيحة وما استُبعد مذكور 30، وقراءة ما تقوله المؤشرات وما لا تقوله 20، وإجراءان بمالك ومقياس وموعد 20، وإعادة القرار بصوت مسموع 20، ووضوح التقرير لرئيس الجهة 10.
+
+## كيف يُقيَّم المقرر
+
+| الطريقة | الوزن |
+|---|---|
+| اختبار حالة مراقب دون مساعدة الذكاء الاصطناعي: ستة طلبات غير مسبوقة | 25% |
+| مخرجات المختبرات: سجل القرارات والاتفاقية، ومذكرة الطلب البحثي ودفاعها، والخطر قبل المعالجة وبعدها وسجل البيانات الوصفية، والخطابات الخمسة | 35% |
+| تقرير الأداء ومراجعته | 40% |
+
+النجاح: 70% إجمالًا و60% في اختبار الحالة، على ألا يُفصح عن أي سجل محمي. الشهادة: إنجاز مرتبط بعمل مقيَّم. بنود الاختبار المراقب لا تُنشر في هذا المستودع؛ وأسئلة التدريب في `assessments/bank.json` وفي صفحة التدريب.
+
+## سياسة الذكاء الاصطناعي في المقرر
+
+- دون ذكاء اصطناعي: اختبار الحالة، والفرز الأول للطلبات العشرة (المختبر 1.1).
+- مرشد: صياغة الاتفاقية (المختبر 1.1) وقرار الطلب البحثي (المختبر 1.2). المساعد يسأل ويشرح ولا يكتب القرار.
+- كامل: الخطابات (المختبر 2.2) والتقرير (مهمة المتابعة)، ويوقّع المشارك كل قرار إفصاح.
+- في كل الأحوال: لا يدخل أي أداة ذكاء اصطناعي توليدي ملف مصنف «مقيد» فأعلى، معتمدة كانت الأداة أم لا، اتباعًا لمبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية. كل ملف في المختبرات له تصنيف في `labs/files/register.csv`، وصفحة كل مختبر تعلّم الملفات «العامة» التي يجوز أن يراها المساعد. الخطابات تُصاغ من ملخصات عامة أعدها مكتب الإتاحة، والتقرير من ناتج أداة المؤشرات المجمّع.
+
+## الاستخدام المسؤول
+
+تحديد الغرض، والحد الأدنى من البيانات، وخطر إعادة تحديد الهوية، والشفافية في أسباب الرفض: كل منها خطوة في مختبر، لا شريحة في آخره. كل حزمة نشر تذكر خطرها المتبقي في سجل بياناتها الوصفية، وكل حجب يذكر فئته، وجميع السجلات اصطناعية.
+
+## المقررات المجاورة
+
+يفترض المقرر LDS-DMG-101 (الأبواب الثلاثة بمستوى الوعي) وتطبيق مستويات التصنيف (LDS-DMG-204). تقويم الأثر على الأفراد في LDS-DMG-206، وهندسة إخفاء الهوية (الربط، والخصوصية التفاضلية، والبيانات الاصطناعية) في DEV-SEC-303. هنا k-anonymity وحدودها والخلايا الصغيرة بمستوى الممارس.
 
 ## المتطلبات السابقة
 
@@ -72,13 +124,46 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [سدايا: الأنظمة والسياسات (صفحة الفهرس)](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+- [سياسة مشاركة البيانات، الإصدار 2.0 (2024)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf)
+- [Data Sharing Policy, version 2.0 (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/DataSharingPolicyEN.pdf)
+- [القواعد العامة للاستخدام الثانوي للبيانات (2025)](https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_AR.pdf)
+- [General Rules for Secondary Use of Data (English edition)](https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_EN.pdf)
+- [سياسة البيانات المفتوحة](https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf)
+- [Open Data Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf)
+- [سياسة حرية المعلومات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf)
+- [Freedom of Information Policy (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf)
+- [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
+- [Generative AI Guidelines for Government (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf)
+- [منصة البيانات المفتوحة](https://open.data.gov.sa/)
+- [Open Data Platform: Open Data License, version 2.0 (March 2023)](https://open.data.gov.sa/odp-public/static/en/assets/Open_Data_License_En.pdf)
+
+### المعايير والأساليب
+
+- [L. Sweeney, k-anonymity: a model for protecting privacy, 2002](https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf)
+- [ARX: privacy models (k-anonymity, average risk, sample uniqueness, l-diversity)](https://arx.deidentifier.org/overview/privacy-criteria/)
+- [UK Data Service: What is the Five Safes framework?](https://ukdataservice.ac.uk/help/secure-lab/what-is-the-five-safes-framework/)
+- [Creative Commons Attribution 4.0 International (deed)](https://creativecommons.org/licenses/by/4.0/)
+- [CC0 1.0 Universal (deed)](https://creativecommons.org/publicdomain/zero/1.0/)
+- [Open Data Commons Attribution License (ODC-By) v1.0](https://opendatacommons.org/licenses/by/1-0/)
+
+### الأدوات
+
+- [ARX Data Anonymization Tool](https://arx.deidentifier.org/)
+- [sdcMicro on CRAN (5.8.2, June 2026)](https://cran.r-project.org/package=sdcMicro)
+- [CKAN API guide: package_create](https://docs.ckan.org/en/latest/api/index.html)
+- [uData (opendatateam) on GitHub](https://github.com/opendatateam/udata)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
 
-- سياسة وضوابط مشاركة البيانات: REPLACE: عنوان النص الرسمي
-- القواعد العامة للاستخدام الثانوي للبيانات: REPLACE: عنوان النص الرسمي
-- سياسة وضوابط البيانات المفتوحة: REPLACE: عنوان النص الرسمي
-- سياسة وضوابط حرية المعلومات: REPLACE: عنوان النص الرسمي
-- قناة التكامل الحكومية وسوق البيانات ومنصة البيانات المفتوحة: REPLACE: عنوان النص الرسمي
+- سياسة مشاركة البيانات، الإصدار 2.0 (2024): https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf (والإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/DataSharingPolicyEN.pdf)
+- القواعد العامة للاستخدام الثانوي للبيانات (2025): https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_AR.pdf (والإنجليزية: https://sdaia.gov.sa/Documents/GeneralRulesForSecondaryUseOfData_EN.pdf)
+- سياسة البيانات المفتوحة: https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf (والإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/OpenDataPolicy.pdf)
+- سياسة حرية المعلومات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf (والإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/FreedomOfInformationPolicy.pdf)
+- قناة التكامل الحكومية وسوق البيانات: لم نجد صفحة رسمية لكل منهما نستشهد بها في 2026-11-18؛ يعرّفهما المقرر بتعريفات سياسة مشاركة البيانات (التعريفان 12 و13). منصة البيانات المفتوحة: https://open.data.gov.sa/ ، ورخصتها: https://open.data.gov.sa/odp-public/static/en/assets/Open_Data_License_En.pdf
+- مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (2025)، ومنها قاعدة المقرر في ما يدخل أدوات الذكاء الاصطناعي: https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf
+
+عناوين ملفات سدايا مأخوذة من صفحة الأنظمة والسياسات (https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)، وفُتح كل ملف منها في 2026-11-18. إصدارات السياسات ومهلها ومسارات المنصات وشروط التراخيص تتغير: تحقق منها قبل كل دفعة.

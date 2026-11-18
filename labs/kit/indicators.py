@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Five access-performance indicators from a request log and download statistics. From labs/:
 
     uv run kit/indicators.py files/followup/indicators_start.json   # the configuration as it arrived

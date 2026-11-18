@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
 """Score a participant's decision log against the key (lab 1.1, for the trainer). From labs/:
 
     uv run solutions/score_triage.py <the participant's decision_log.csv>
